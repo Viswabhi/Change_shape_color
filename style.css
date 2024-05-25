@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+.main{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 0px 51px -5px rgba(77, 77, 77, 1);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 227, 226); 
+    /* position: relative; */
+}
+.rec{
+    width: 90px;
+    height: 90px;
+    background-color: black;
+}
+.btn{
+     margin: 30px;
+     width: 80%;
+     display: flex;
+     justify-content: space-between;
+}
+.btn > button{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    width: 140px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.shape {
+    width: 100px;
+    height: 100px;
+    background-color: white; /* Shapes background color */
+    transition: all 0.5s;
+}
+
+/* Additional shapes */
+.shape.square {
+    border-radius: 0;
+}
+
+.shape.rectangle {
+    width: 120px;
+    height: 80px;
+    border-radius: 0;
+}
+
+.shape.oval {
+    width: 120px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.shape.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid white;
+    background-color: transparent;
+}
+
+.shape.pentagon {
+    width: 0;
+    border-width: 0 40px 70px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    background-color: transparent;
+}
+
+.shape.hexagon {
+    width: 60px;
+    height: 34.64px;
+    background-color: white;
+    position: relative;
+}
+
+.shape.hexagon::before,
+.shape.hexagon::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+
+.shape.hexagon::before {
+    bottom: 100%;
+    border-bottom: 17.32px solid white;
+}
+
+.shape.hexagon::after {
+    top: 100%;
+    border-top: 17.32px solid white;
+}
+
+.shape.octagon {
+    width: 100px;
+    height: 100px;
+    background: white;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.shape.star {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 70px solid white;
+    position: relative;
+    margin-top: -35px;
+}
+
+.shape.star::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 70px solid white;
+}
+
+.shape.rhombus {
+    width: 80px;
+    height: 80px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+.shape.parallelogram {
+    width: 120px;
+    height: 60px;
+    background: white;
+    transform: skew(20deg);
+}
+
+.shape.trapezoid {
+    width: 100px;
+    height: 0;
+    border-bottom: 60px solid white;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.shape.heart {
+    width: 100px;
+    height: 90px;
+    position: relative;
+    background: white;
+    display: inline-block;
+}
+
+.shape.heart::before,
+.shape.heart::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 90px;
+    border-radius: 50px 50px 0 0;
+    background: white;
+}
+
+.shape.heart::before {
+    left: 50px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.shape.heart::after {
+    left: -50px;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.shape.cross {
+    width: 30px;
+    height: 100px;
+    background: white;
+    position: relative;
+}
+
+.shape.cross::before {
+    content: "";
+    width: 100px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: -35px;
+}
+
+
+
+
+
+
